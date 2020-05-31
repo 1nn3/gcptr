@@ -1,0 +1,10 @@
+
+0.0.2:
+	* update
+	* renamed options
+	  * -w, --width to -x
+	  * -h, --height to -y
+	* fixed the GLib GIO-ERROR with the not installed settings schema
+
+0.0.1:
+	* initial release

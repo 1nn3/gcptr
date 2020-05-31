@@ -1,0 +1,32 @@
+GCPtr (GTK+ Centre Pointer)
+
+GTK+ tool to centre the pointer on monitor. Useful as keyboard-shortcut
+on multi-head environments.
+
+The pointer is centered on the primary monitor of the default screen. If
+no primary monitor is configured by the user, defaulting to the first
+monitor.
+
+The manpage explains the usage of GCPtr and the options.
+
+However. Maybe one day this functionality will be implemented into GNOME
+directly. Until then, we have this tool ;-)
+
+REQUIREMENTS
+
+* GTK+ (GIMP Toolkit) Version 3.x
+
+INSTALLATION
+
+To install GCPtr in your home directory run:
+
+	./autogen.sh # create configure script
+	./configure --prefix=$HOME/.local
+	make
+	make install
+	$HOME/.local/bin/gcptr # run it
+
+LICENSE AND COPYRIGHT
+
+GCPtr is free software. See COPYING and
+http://www.gnu.org/licenses/gpl.html for more information.

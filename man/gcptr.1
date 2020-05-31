@@ -1,0 +1,88 @@
+.\" Manpage for GCPtr by nobody <nobody>
+
+.TH "gcptr" "1" "2013-12-04" "nobody" "GCPtr"
+
+.SH NAME
+
+GCPtr - GTK+ Centre Pointer
+
+.SH SYNOPSIS
+
+gcptr [OPTION …]
+
+.SH DESCRIPTION
+
+Centre the pointer on monitor.
+
+.SH OPTIONS
+
+.SS -?, --help
+
+Shows help options.
+
+.SS -m, --monitor=NUM
+
+Monitor number.
+
+.PP
+
+If no monitor is given, the pointer is centered on the primary monitor
+of the default screen. If no primary monitor is configured by the user,
+the default value for NUM will be 0, defaulting to the first monitor.
+
+.SS -i, --info
+
+Print information about size, dimensions and so on to stdout and exit.
+
+.SS -x, --x=X
+
+Alternative X coordinate.
+
+.PP
+
+If no X coordinate is given, centre is used.
+
+.SS -y, --y=Y
+
+Alternative Y coordinate.
+
+.PP
+
+If no Y coordinate is given, centre is used.
+
+.SS --locate-pointer
+
+The new location of the pointer will be highlighted. This function is
+not implemented yet.
+
+.PP
+
+.SH NOTES
+
+.SS Set the X display and screen to use
+
+.IP "Example usage of the standard command line options for GTK+ programs:"
+
+	gcptr [--display=DISPLAY] [--screen=SCREEN] [OPTION …]
+
+.IP "Example usage of the DISPLAY environment variable:"
+
+	env DISPLAY=":displaynumber.screennumber" gcptr [OPTION …]
+
+.SS Set the primary monitor
+
+Note: The desktop environment you use, maybe have an option to set the
+primary monitor too.
+
+.IP "Example usage of xrandr to set an output as primary:"
+
+The output will be sorted first in Xinerama and RANDR geometry requests.
+
+	xrandr --output <OUTPUT> --primary
+
+.SH SEE ALSO
+
+.BR xrandr (1),
+.BR gtk-options (7),
+.BR X (7)
+

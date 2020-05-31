@@ -1,0 +1,15 @@
+Source: gcptr
+Section: gnome
+Priority: extra
+Maintainer: nobody <nobody>
+Build-Depends: debhelper (>= 8.0.0), dh-autoreconf, libgtk-3-dev
+Standards-Version: 3.9.2
+Vcs-Git:
+Vcs-Browser:
+
+Package: gcptr
+Architecture: any
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: Centre the pointer on monitor
+ GTK+ tool to centre the pointer on monitor.
+ Useful as keyboard-shortcut on multi-head environments.
